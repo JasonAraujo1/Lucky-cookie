@@ -36,7 +36,7 @@ Ao clicar no biscoito, uma mensagem aleatória é exibida.
 O usuário pode abrir outro biscoito clicando no botão "Abrir outro biscoito".
 A aplicação possui animações para tornar a experiência mais divertida.
 
-- Você pode visualizar o layout do projeto através [DESTE LINK](<https://github.com/JasonAraujo1/Lucky-cookie>).
+- Você pode visualizar o layout do projeto através [DESTE LINK](<https://jasonaraujo1.github.io/Lucky-cookie/>).
 
 ## :memo: Licença
 Este projeto está sob a licença MIT.
