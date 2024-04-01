@@ -18,7 +18,7 @@
 <br>
 
 <p align="center">
-  <img alt="" src=".github/5.png" width="100%">
+  <img alt="" src=".github/JavaScript.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -36,7 +36,7 @@ Ao clicar no biscoito, uma mensagem aleatória é exibida.
 O usuário pode abrir outro biscoito clicando no botão "Abrir outro biscoito".
 A aplicação possui animações para tornar a experiência mais divertida.
 
-- Você pode visualizar o layout do projeto através [DESTE LINK](<https://jasonaraujo1.github.io/TreinoJavaScript-5/>).
+- Você pode visualizar o layout do projeto através [DESTE LINK](<https://github.com/JasonAraujo1/Lucky-cookie>).
 
 ## :memo: Licença
 Este projeto está sob a licença MIT.
