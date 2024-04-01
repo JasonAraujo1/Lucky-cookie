@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(45deg, var(--bg-body1), var(--bg-body2));
+    animation: gradient 8s ease infinite;
+    background-size: 200% 200%;
+    
+}
+
+body *{
+    
+   font-family: "Bebas Neue", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+main{
+    display: flex;
+    justify-content: center; /* Para centralizar verticalmente */
+    align-items: center; /* Para centralizar horizontalmente */
+    height: 100vh; /* Para ocupar toda a altura da tela */
+}
+
+:root{
+    --letter:#F3EFF5 ;
+    --bg-box:#332E3C;
+    --bg-body1:#006DAA;
+    --bg-body2:#5E8C61;
+} 
+
+img{
+    width: 300px;
+    animation: balanço 2s ease-in-out infinite;
+    
+}
+
+div{
+    box-shadow: 2px 2px 2px 2px  rgba(0, 0, 0, 0.089);
+   
+ 
+}
+
+.screen1, .screen2{
+    width:  400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background-color:var(--bg-box);
+    color: var(--letter);
+}
+
+
+
+.btnReset{
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+/* animações */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+@keyframes balanço {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.biscoito:hover {
+    animation: none;
+    cursor: pointer;
+    transform: scale(1.08); /* Aumenta em 10% */
+}
+
+.hide{
+    display: none;
+}
+
+
+.screen2 .frase {
+    position: absolute;
+    bottom: 47%;/* Inicia a frase abaixo da imagem */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    transition: top 1s; /* Adiciona uma transição suave de 1 segundo */
+    font-size: 1px;
+    padding: 0;
+    opacity: 1%;
+    
+}
+
+.screen2.show .frase {
+    bottom: 57%; /* Move a frase para o centro verticalmente */
+    transition: 3s;
+    font-size: 14px;
+    opacity: 90%;
+    padding: 5px;
+}
+
+.frase{
+    border-radius: 2px;
+    padding: 10px;
+    background-color: var(--letter);
+    color: var(--bg-box);
+}
+
+
+.btnReset{
+    opacity: 50%;
+    position: absolute;
+    top: 63%;
+    
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--letter);
+    border-radius: 5px;
+    border: 1px solid ;
+}
+.btnReset:hover{
+    opacity: 100%;
+    transition: 0.2s;
+}
+.btnReset:not(hover){
+  
+    transition: 0.5s;
+}
